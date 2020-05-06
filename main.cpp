@@ -50,7 +50,6 @@ bool reboot(diagnostics_relay_client_t diagnostics_client, lockdownd_client_t cl
 	return false;
 }
 bool exit(diagnostics_relay_client_t diagnostics_client, lockdownd_client_t client) {
-	diagnostics_relay_sleep(diagnostics_client);
 	return true;
 }
 bool recovery(diagnostics_relay_client_t diagnostics_client, lockdownd_client_t client) {
@@ -94,7 +93,6 @@ int main() {
 	funcs["reboot"] = reboot;
 	funcs["exit"] = exit;
 	funcs["recovery"] = recovery;
-
 
 	unsigned long long ecid = 0;
 	idevice_info_t *dev_list = NULL;
