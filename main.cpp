@@ -30,7 +30,6 @@
 #include <libirecovery.h>
 #include <map>
 #include <cassert>
-#include <iostream>
 #include <string.h>
 #include <unistd.h>
 #include <limits.h>
