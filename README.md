@@ -5,7 +5,8 @@ A command line utility to interact with ios devices over usb. Requires libimobil
 # Build instructions:  
 
 (This doesnt work on windows, there are seperate tools for windows like iMazing. Windows support may be added at a later date):  
-Follow the instructions to install libimobiledevice on your os. There is a chance it is already installed.  
+Follow the instructions to install libimobiledevice on your os. There is a chance it is already installed. 
+You also need libimobiledevice-dev and at the time of writing, the apt package is outdated so you must build from source
 Install https://github.com/libimobiledevice/libirecovery (if it is not in your package manager install it from source as per its readme.md) then download the linuxidevicetools file from the releases.  
 
 Now (on both OSes) open your terminal emulator of choice and go into the directory of the downloaded `./linuxidevicetools` file. Run it with `sudo ./linuxidevicetools` and enter your password if prompted to allow the software to interact with your device.  
